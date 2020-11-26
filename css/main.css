@@ -1,3 +1,45 @@
+@charset "UTF-8";
+/* ******************************** */
+/* ******************************** */
+/* FUNCIONES */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/* VARIABLES */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+/* MIXINS */
+/* ******************************** */
+/* ******************************** */
+/* ******************************** */
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (max-device-width: 320px) and (orientation: portrait) {
+  .main__star {
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+  }
+}
 /* ******************************** */
 /* ******************************** */
 /* TIPOGRAFIA */
